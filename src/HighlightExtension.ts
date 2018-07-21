@@ -8,7 +8,7 @@
 
 import { platform } from "os";
 import * as vscode from "vscode";
-import { updateCompletions } from "./completionHelper";
+// import { updateCompletions } from "./completionHelper";
 import {
   getAnnotationTypes,
   getConfig,
@@ -60,7 +60,7 @@ export default class HighlightExtension {
 
   private updateData() {
     this._updatePatternData();
-    this._updateCompletions();
+    // this._updateCompletions();
     this._updateDecorations();
   }
 
@@ -79,9 +79,9 @@ export default class HighlightExtension {
     this.annotations = result.annotations;
   }
 
-  private _updateCompletions() {
-    updateCompletions(this.config);
-  }
+  // private _updateCompletions() {
+  //   updateCompletions(this.config);
+  // }
 
   /**
    *  process the file search

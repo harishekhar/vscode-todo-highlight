@@ -48,13 +48,6 @@ Following annotations are out of the box:
 `WARNING:`
 
 
-### Code completion
-
-Code completion for the annotations.
-
-![Code completion for the annotations](./assets/code_completion.gif)
-
-
 ### Toggle highlight
 
 Enable/disable the highlight.
@@ -194,11 +187,6 @@ This extension contributes the following settings:
 ### Avoid unwanted partial highlight
 
 Word boundary detect. The hard part is `\b` only work with a [predefined chracter collection](http://www.ecma-international.org/ecma-262/5.1/#sec-15.10.2.6). That means, `\bTODO:\b` just won't work as ecpected. As for at present I can not do the boundray detect within the extension internal for the annotaions from user config. The good news is that with todohighlight v1 all patterns are defined with RegExp, so you can decide what is your doundary to match and meet your own requirments. For example, `\\bBUG:` match exactlly `BUG:` and skip `DEBUG:`. Related issues #48.
-
-
-### Code completion not working in comment
-
-Currently the code completion cannot working in comment. You can first type the annotations out then comment it out.
 
 
 ## Release Notes
